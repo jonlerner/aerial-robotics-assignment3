@@ -51,18 +51,18 @@ des_psi = des_state.yaw;
 des_psi_dot = des_state.yawdot;
 
 % Constants
-k_d_x = 32;
-k_p_x = 2.4;
-k_d_y = 32;
-k_p_y = 3.2;
+k_d_x = 30;
+k_p_x = 3;
+k_d_y = 30;
+k_p_y = 3;
 k_p_z = 800;
-k_d_z = 60;
+k_d_z = 30;
 k_p_phi = 160;
-k_d_phi = 2.6;
+k_d_phi = 3;
 k_p_theta = 160;
-k_d_theta = 2.6;
+k_d_theta = 3;
 k_p_psi = 160;
-k_d_psi = 2.6;
+k_d_psi = 3;
 
 % Commanded accelerations
 commanded_r_ddot_x = des_x_ddot + k_d_x * (des_x_dot - x_dot) + k_p_x * (des_x - x);
